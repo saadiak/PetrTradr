@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -96,6 +96,12 @@
                                     <action selector="onSignUp:" destination="5QI-ET-OLm" eventType="touchUpInside" id="fc0-he-522"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADD-dR-BL8" userLabel="Error Label">
+                                <rect key="frame" x="130" y="598" width="155.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -109,11 +115,14 @@
                             <constraint firstItem="3an-kR-Uwd" firstAttribute="centerX" secondItem="Gld-AS-sig" secondAttribute="centerX" id="IgW-mU-5DI"/>
                             <constraint firstItem="3an-kR-Uwd" firstAttribute="top" secondItem="wPu-kk-LQE" secondAttribute="bottom" constant="100" id="Xco-Fb-9py"/>
                             <constraint firstItem="xqg-77-wQa" firstAttribute="leading" secondItem="3NN-si-AkA" secondAttribute="leading" constant="150" id="lbO-XH-bLO"/>
+                            <constraint firstItem="ADD-dR-BL8" firstAttribute="top" secondItem="xqg-77-wQa" secondAttribute="bottom" constant="25" id="n2l-Lw-n4c"/>
+                            <constraint firstItem="ADD-dR-BL8" firstAttribute="top" secondItem="xqg-77-wQa" secondAttribute="bottom" constant="25" id="pbz-bz-c9Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3NN-si-AkA"/>
                     </view>
                     <navigationItem key="navigationItem" id="uGw-fJ-Kjm"/>
                     <connections>
+                        <outlet property="errorLabel" destination="ADD-dR-BL8" id="CPm-71-StS"/>
                         <outlet property="passwordField" destination="a1V-Yd-y0h" id="qmo-WF-wrt"/>
                         <outlet property="usernameField" destination="ti0-tK-0vc" id="cMC-Jt-RB2"/>
                         <segue destination="6BW-Fh-SsE" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="6Bs-z7-lJT"/>
