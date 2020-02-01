@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import Parse
 
 class ReminderFormViewController: UIViewController {
 
@@ -14,9 +16,10 @@ class ReminderFormViewController: UIViewController {
     @IBOutlet weak var addReminderButton: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var bodyContextTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -24,6 +27,23 @@ class ReminderFormViewController: UIViewController {
     }
     
     @IBAction func addReminder(_ sender: Any) {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd MMMM yyyy hh:mm"
+        let selectedDate = dateFormatter.string(from: datePicker.date)
+        print(selectedDate)
+        let reminder = PFObject(className:"reminder")
+        reminder["date"] = datePicker.date
+        reminder["bodyContent"] = bodyContextTextField
+        reminder.saveInBackground{(succeeded, error) in
+            if (succeeded) {
+                //The object has been saved
+            }
+            else {
+                //There was a problem, check error description
+            }
+            
+        }
     }
     
 
