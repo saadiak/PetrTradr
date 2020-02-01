@@ -7,4 +7,5 @@ target 'PetrTradr' do
 
   # Pods for PetrTradr
   pod 'Parse'
+pod 'Alamofire'
 end
