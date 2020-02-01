@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D89E23E568D200FF1270 /* AppDelegate.swift */; };
 		A7D1D8A123E568D200FF1270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */; };
-		A7D1D8A323E568D200FF1270 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D8A223E568D200FF1270 /* ViewController.swift */; };
 		A7D1D8A623E568D200FF1270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D1D8A423E568D200FF1270 /* Main.storyboard */; };
 		A7D1D8A923E568D200FF1270 /* PetrTradr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D8A723E568D200FF1270 /* PetrTradr.xcdatamodeld */; };
 		A7D1D8AB23E568D400FF1270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D1D8AA23E568D400FF1270 /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		A7D1D89B23E568D200FF1270 /* PetrTradr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrTradr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D1D89E23E568D200FF1270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7D1D8A223E568D200FF1270 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7D1D8A523E568D200FF1270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7D1D8A823E568D200FF1270 /* PetrTradr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetrTradr.xcdatamodel; sourceTree = "<group>"; };
 		A7D1D8AA23E568D400FF1270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 			children = (
 				A7D1D89E23E568D200FF1270 /* AppDelegate.swift */,
 				A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */,
-				A7D1D8A223E568D200FF1270 /* ViewController.swift */,
 				A7F8538C23E5820400290156 /* HomePageViewController.swift */,
 				A7D1D8A423E568D200FF1270 /* Main.storyboard */,
 				A7D1D8AA23E568D400FF1270 /* Assets.xcassets */,
@@ -94,7 +91,6 @@
 				637499B5479D2E7D809F4D06 /* Pods-PetrTradr.debug.xcconfig */,
 				E56BF020727A0C77C83686BB /* Pods-PetrTradr.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,7 +209,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7D1D8A323E568D200FF1270 /* ViewController.swift in Sources */,
 				A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */,
 				A7D1D8A923E568D200FF1270 /* PetrTradr.xcdatamodeld in Sources */,
 				A7F8538D23E5820400290156 /* HomePageViewController.swift in Sources */,
