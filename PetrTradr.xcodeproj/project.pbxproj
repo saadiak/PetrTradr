@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D46F67A23E5F04F00E898DE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46F67923E5F04F00E898DE /* LogInViewController.swift */; };
+		4DEF699A23E60B930070D413 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF699923E60B930070D413 /* TradeViewController.swift */; };
+		4DEF699C23E612A10070D413 /* TradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF699B23E612A10070D413 /* TradeTableViewCell.swift */; };
 		A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D89E23E568D200FF1270 /* AppDelegate.swift */; };
 		A7D1D8A123E568D200FF1270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */; };
 		A7D1D8A623E568D200FF1270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D1D8A423E568D200FF1270 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		07359844E7D7BA218DEA28FA /* Pods_PetrTradr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetrTradr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D46F67923E5F04F00E898DE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		4DEF699923E60B930070D413 /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
+		4DEF699B23E612A10070D413 /* TradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeTableViewCell.swift; sourceTree = "<group>"; };
 		637499B5479D2E7D809F4D06 /* Pods-PetrTradr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrTradr.debug.xcconfig"; path = "Target Support Files/Pods-PetrTradr/Pods-PetrTradr.debug.xcconfig"; sourceTree = "<group>"; };
 		A7D1D89B23E568D200FF1270 /* PetrTradr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrTradr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D1D89E23E568D200FF1270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 				B17513C623E602D700B81532 /* ReminderTableViewController.swift */,
 				B17513C823E602FD00B81532 /* ReminderCell.swift */,
 				B17513CA23E603BD00B81532 /* ReminderFormViewController.swift */,
+				4DEF699923E60B930070D413 /* TradeViewController.swift */,
+				4DEF699B23E612A10070D413 /* TradeTableViewCell.swift */,
 			);
 			path = PetrTradr;
 			sourceTree = "<group>";
@@ -221,9 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEF699A23E60B930070D413 /* TradeViewController.swift in Sources */,
 				B17513CB23E603BD00B81532 /* ReminderFormViewController.swift in Sources */,
 				A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */,
 				A7D1D8A923E568D200FF1270 /* PetrTradr.xcdatamodeld in Sources */,
+				4DEF699C23E612A10070D413 /* TradeTableViewCell.swift in Sources */,
 				A7F8538D23E5820400290156 /* HomePageViewController.swift in Sources */,
 				B17513C923E602FD00B81532 /* ReminderCell.swift in Sources */,
 				4D46F67A23E5F04F00E898DE /* LogInViewController.swift in Sources */,
