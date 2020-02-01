@@ -15,9 +15,12 @@
 		A7D1D8AB23E568D400FF1270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D1D8AA23E568D400FF1270 /* Assets.xcassets */; };
 		A7D1D8AE23E568D400FF1270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D1D8AC23E568D400FF1270 /* LaunchScreen.storyboard */; };
 		A7F8538D23E5820400290156 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F8538C23E5820400290156 /* HomePageViewController.swift */; };
+		FDC79688D26BD8AB19165403 /* Pods_PetrTradr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07359844E7D7BA218DEA28FA /* Pods_PetrTradr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07359844E7D7BA218DEA28FA /* Pods_PetrTradr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetrTradr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		637499B5479D2E7D809F4D06 /* Pods-PetrTradr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrTradr.debug.xcconfig"; path = "Target Support Files/Pods-PetrTradr/Pods-PetrTradr.debug.xcconfig"; sourceTree = "<group>"; };
 		A7D1D89B23E568D200FF1270 /* PetrTradr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrTradr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D1D89E23E568D200FF1270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		A7D1D8AD23E568D400FF1270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7D1D8AF23E568D400FF1270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7F8538C23E5820400290156 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		E56BF020727A0C77C83686BB /* Pods-PetrTradr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrTradr.release.xcconfig"; path = "Target Support Files/Pods-PetrTradr/Pods-PetrTradr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC79688D26BD8AB19165403 /* Pods_PetrTradr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2859083F198ADA05661BA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07359844E7D7BA218DEA28FA /* Pods_PetrTradr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A7D1D89223E568D200FF1270 = {
 			isa = PBXGroup;
 			children = (
 				A7D1D89D23E568D200FF1270 /* PetrTradr */,
 				A7D1D89C23E568D200FF1270 /* Products */,
+				DD5577E7494BFE3E5F693969 /* Pods */,
+				0C2859083F198ADA05661BA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +88,16 @@
 			path = PetrTradr;
 			sourceTree = "<group>";
 		};
+		DD5577E7494BFE3E5F693969 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				637499B5479D2E7D809F4D06 /* Pods-PetrTradr.debug.xcconfig */,
+				E56BF020727A0C77C83686BB /* Pods-PetrTradr.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7D1D8B223E568D400FF1270 /* Build configuration list for PBXNativeTarget "PetrTradr" */;
 			buildPhases = (
+				8A3C427D6DDDE6F9769DD052 /* [CP] Check Pods Manifest.lock */,
 				A7D1D89723E568D200FF1270 /* Sources */,
 				A7D1D89823E568D200FF1270 /* Frameworks */,
 				A7D1D89923E568D200FF1270 /* Resources */,
+				A69AC7829CA5A64EDAA26B56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A3C427D6DDDE6F9769DD052 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetrTradr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A69AC7829CA5A64EDAA26B56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetrTradr/Pods-PetrTradr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetrTradr/Pods-PetrTradr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetrTradr/Pods-PetrTradr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7D1D89723E568D200FF1270 /* Sources */ = {
@@ -290,6 +359,7 @@
 		};
 		A7D1D8B323E568D400FF1270 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 637499B5479D2E7D809F4D06 /* Pods-PetrTradr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +378,7 @@
 		};
 		A7D1D8B423E568D400FF1270 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E56BF020727A0C77C83686BB /* Pods-PetrTradr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
