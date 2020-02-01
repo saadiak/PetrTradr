@@ -134,16 +134,16 @@
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="dg2-l8-6D2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Image" id="hxT-Gs-5cE"/>
+                    <tabBarItem key="tabBarItem" title="" image="Trade" id="hxT-Gs-5cE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ls9-K2-xs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5002.898550724638" y="1133.7053571428571"/>
+            <point key="canvasLocation" x="4838" y="1148"/>
         </scene>
-        <!--Home Page View Controller-->
+        <!--View Controller-->
         <scene sceneID="gHH-an-NHb">
             <objects>
-                <viewController id="qO1-X5-ryj" customClass="HomePageViewController" customModule="PetrTradr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qO1-X5-ryj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wdf-2E-8iQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="5002.898550724638" y="484.82142857142856"/>
         </scene>
-        <!--Home Page View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="vTq-Is-YnG">
             <objects>
-                <tabBarController id="6BW-Fh-SsE" customClass="HomePageViewController" sceneMemberID="viewController">
+                <tabBarController id="6BW-Fh-SsE" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="EHq-Bs-ERv"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u7y-KU-hrl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -252,11 +252,11 @@
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="8RA-KF-Dlo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Trade" id="OXG-Va-cC6"/>
+                    <tabBarItem key="tabBarItem" title="" image="Image" id="OXG-Va-cC6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gr-eD-Amm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4020" y="1481"/>
+            <point key="canvasLocation" x="4781" y="1919"/>
         </scene>
     </scenes>
     <resources>
