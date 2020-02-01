@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -116,7 +116,7 @@
                     <connections>
                         <outlet property="passwordField" destination="a1V-Yd-y0h" id="qmo-WF-wrt"/>
                         <outlet property="usernameField" destination="ti0-tK-0vc" id="cMC-Jt-RB2"/>
-                        <segue destination="6BW-Fh-SsE" kind="presentation" identifier="loginSegue" id="6Bs-z7-lJT"/>
+                        <segue destination="6BW-Fh-SsE" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="6Bs-z7-lJT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7z-aI-T3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -124,33 +124,33 @@
             </objects>
             <point key="canvasLocation" x="2205.7971014492755" y="809.59821428571422"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="f6I-kt-zT2">
             <objects>
                 <viewController id="u7N-mr-4F3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="77c-LC-we3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="dg2-l8-6D2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="hxT-Gs-5cE"/>
+                    <tabBarItem key="tabBarItem" title="" image="Image" id="hxT-Gs-5cE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ls9-K2-xs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5002.898550724638" y="1133.7053571428571"/>
         </scene>
-        <!--Item 1-->
+        <!--Home Page View Controller-->
         <scene sceneID="gHH-an-NHb">
             <objects>
                 <viewController id="qO1-X5-ryj" customClass="HomePageViewController" customModule="PetrTradr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wdf-2E-8iQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="VEH-D7-g5P"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="PetrLogo" id="LpV-3J-ChY"/>
+                    <tabBarItem key="tabBarItem" title="" image="Profile" id="LpV-3J-ChY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oK-Sf-QX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,11 +169,12 @@
                     <connections>
                         <segue destination="qO1-X5-ryj" kind="relationship" relationship="viewControllers" id="YFa-ZS-0aP"/>
                         <segue destination="u7N-mr-4F3" kind="relationship" relationship="viewControllers" id="iKM-n8-Nb2"/>
+                        <segue destination="ZVf-2P-Di1" kind="relationship" relationship="viewControllers" id="VzM-FG-VAC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I8z-ln-rKo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3520.289855072464" y="809.59821428571422"/>
+            <point key="canvasLocation" x="3196" y="829"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="T0B-KQ-bWd">
@@ -241,8 +242,27 @@
             </objects>
             <point key="canvasLocation" x="1130" y="1584"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="fmy-kH-6cD">
+            <objects>
+                <viewController id="ZVf-2P-Di1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K1m-B9-5bH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8RA-KF-Dlo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Trade" id="OXG-Va-cC6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gr-eD-Amm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4020" y="1481"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Image" width="32" height="32"/>
         <image name="PetrLogo" width="1182" height="1178"/>
+        <image name="Profile" width="32" height="32"/>
+        <image name="Trade" width="32" height="32"/>
     </resources>
 </document>
