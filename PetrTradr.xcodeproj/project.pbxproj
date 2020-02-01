@@ -14,6 +14,7 @@
 		A7D1D8A923E568D200FF1270 /* PetrTradr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D8A723E568D200FF1270 /* PetrTradr.xcdatamodeld */; };
 		A7D1D8AB23E568D400FF1270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D1D8AA23E568D400FF1270 /* Assets.xcassets */; };
 		A7D1D8AE23E568D400FF1270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D1D8AC23E568D400FF1270 /* LaunchScreen.storyboard */; };
+		A7F8538D23E5820400290156 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F8538C23E5820400290156 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A7D1D8AA23E568D400FF1270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7D1D8AD23E568D400FF1270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7D1D8AF23E568D400FF1270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F8538C23E5820400290156 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				A7D1D89E23E568D200FF1270 /* AppDelegate.swift */,
 				A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */,
 				A7D1D8A223E568D200FF1270 /* ViewController.swift */,
+				A7F8538C23E5820400290156 /* HomePageViewController.swift */,
 				A7D1D8A423E568D200FF1270 /* Main.storyboard */,
 				A7D1D8AA23E568D400FF1270 /* Assets.xcassets */,
 				A7D1D8AC23E568D400FF1270 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				A7D1D8A323E568D200FF1270 /* ViewController.swift in Sources */,
 				A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */,
 				A7D1D8A923E568D200FF1270 /* PetrTradr.xcdatamodeld in Sources */,
+				A7F8538D23E5820400290156 /* HomePageViewController.swift in Sources */,
 				A7D1D8A123E568D200FF1270 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
