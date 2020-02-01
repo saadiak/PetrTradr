@@ -17,6 +17,7 @@ class LogInViewController: UICollectionViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var phoneNumberField: UITextField!
     
     @IBAction func onSignIn(_ sender: Any)
     {
@@ -41,6 +42,8 @@ class LogInViewController: UICollectionViewController {
         let user = PFUser(className: "_User")
         user.username = usernameField.text
         user.password = passwordField.text
+        
+        user["phone_number"] = phoneNumberField.text
         
         user.signUpInBackground { (success, error) in
             if (success)
