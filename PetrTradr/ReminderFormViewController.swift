@@ -10,6 +10,7 @@ import UIKit
 
 class ReminderFormViewController: UIViewController {
 
+    @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var addReminderButton: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var bodyContextTextField: UITextField!
@@ -19,6 +20,8 @@ class ReminderFormViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func cancelAction(_ sender: Any) {
+    }
     
     @IBAction func addReminder(_ sender: Any) {
     }
