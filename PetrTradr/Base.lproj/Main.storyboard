@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="PCL-sc-gcc">
             <objects>
-                <viewController id="5QI-ET-OLm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gld-AS-sig">
+                <viewController id="5QI-ET-OLm" customClass="LogInViewController" customModule="PetrTradr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gld-AS-sig" customClass="UICollectionView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3an-kR-Uwd">
-                                <rect key="frame" x="107" y="259" width="200" height="159.5"/>
+                                <rect key="frame" x="107" y="250" width="200" height="159.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-Xb-TMX">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
@@ -47,7 +47,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04v-uO-bwy">
-                                <rect key="frame" x="149.5" y="458.5" width="115" height="51"/>
+                                <rect key="frame" x="149.5" y="449.5" width="115" height="51"/>
                                 <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="7fG-cG-gni"/>
@@ -59,36 +59,30 @@
                                 </state>
                                 <connections>
                                     <action selector="SignIn:" destination="eCq-Qh-qVl" eventType="touchUpInside" id="wQu-DS-9bd"/>
+                                    <action selector="onSignIn:" destination="5QI-ET-OLm" eventType="touchUpInside" id="PtT-bQ-BFK"/>
                                     <action selector="signIn:" destination="eCq-Qh-qVl" eventType="touchUpInside" id="lu6-Ge-QGT"/>
-                                    <segue destination="6BW-Fh-SsE" kind="presentation" modalPresentationStyle="fullScreen" id="fdm-pU-gIz">
-                                        <segue key="commit" inheritsFrom="parent" id="8vM-XH-jxt"/>
-                                        <segue key="preview" inheritsFrom="commit" id="4Wb-hK-NHJ"/>
-                                    </segue>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPu-kk-LQE">
-                                <rect key="frame" x="67" y="49" width="280" height="110"/>
+                                <rect key="frame" x="67" y="49" width="280" height="101"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PetrLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kVU-Ym-csJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="108" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="101"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="101" id="USM-5r-pS5"/>
                                             <constraint firstAttribute="width" constant="108" id="x1j-aR-taT"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tradr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqn-0I-c4T">
-                                        <rect key="frame" x="108" y="0.0" width="172" height="110"/>
+                                        <rect key="frame" x="108" y="0.0" width="172" height="101"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="54"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="p7d-Nc-ctJ"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqg-77-wQa">
-                                <rect key="frame" x="127" y="687" width="160" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqg-77-wQa">
+                                <rect key="frame" x="150" y="520.5" width="115" height="51"/>
                                 <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="15M-5e-5tu"/>
@@ -98,32 +92,44 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.59999999999999998" green="0.71764705880000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignUp:" destination="5QI-ET-OLm" eventType="touchUpInside" id="fc0-he-522"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wPu-kk-LQE" firstAttribute="centerX" secondItem="Gld-AS-sig" secondAttribute="centerX" id="1CX-LT-kFB"/>
+                            <constraint firstItem="xqg-77-wQa" firstAttribute="top" secondItem="04v-uO-bwy" secondAttribute="bottom" constant="25" id="1Oc-cF-nbT"/>
+                            <constraint firstItem="wPu-kk-LQE" firstAttribute="top" secondItem="3NN-si-AkA" secondAttribute="top" constant="20" id="5xe-9e-hpQ"/>
                             <constraint firstItem="04v-uO-bwy" firstAttribute="centerX" secondItem="Gld-AS-sig" secondAttribute="centerX" id="9BL-B6-4oA"/>
                             <constraint firstItem="wPu-kk-LQE" firstAttribute="top" secondItem="3NN-si-AkA" secondAttribute="top" constant="5" id="Bbu-JZ-crQ"/>
                             <constraint firstItem="04v-uO-bwy" firstAttribute="top" secondItem="3an-kR-Uwd" secondAttribute="bottom" constant="40" id="CKZ-9E-rFz"/>
+                            <constraint firstItem="xqg-77-wQa" firstAttribute="top" secondItem="04v-uO-bwy" secondAttribute="bottom" constant="20" id="IEZ-E8-zrh"/>
                             <constraint firstItem="3an-kR-Uwd" firstAttribute="centerX" secondItem="Gld-AS-sig" secondAttribute="centerX" id="IgW-mU-5DI"/>
-                            <constraint firstItem="3an-kR-Uwd" firstAttribute="top" secondItem="wPu-kk-LQE" secondAttribute="bottom" constant="100" id="ZYa-5V-dBa"/>
+                            <constraint firstItem="3an-kR-Uwd" firstAttribute="top" secondItem="wPu-kk-LQE" secondAttribute="bottom" constant="100" id="Xco-Fb-9py"/>
+                            <constraint firstItem="xqg-77-wQa" firstAttribute="leading" secondItem="3NN-si-AkA" secondAttribute="leading" constant="150" id="lbO-XH-bLO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3NN-si-AkA"/>
                     </view>
                     <navigationItem key="navigationItem" id="uGw-fJ-Kjm"/>
+                    <connections>
+                        <outlet property="passwordField" destination="a1V-Yd-y0h" id="qmo-WF-wrt"/>
+                        <outlet property="usernameField" destination="ti0-tK-0vc" id="cMC-Jt-RB2"/>
+                        <segue destination="6BW-Fh-SsE" kind="presentation" identifier="loginSegue" id="6Bs-z7-lJT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7z-aI-T3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="eCq-Qh-qVl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2207" y="810"/>
+            <point key="canvasLocation" x="2205.7971014492755" y="809.59821428571422"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="f6I-kt-zT2">
             <objects>
                 <viewController id="u7N-mr-4F3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="77c-LC-we3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dg2-l8-6D2"/>
@@ -137,9 +143,9 @@
         <!--Item 1-->
         <scene sceneID="gHH-an-NHb">
             <objects>
-                <viewController id="qO1-X5-ryj" sceneMemberID="viewController">
+                <viewController id="qO1-X5-ryj" customClass="HomePageViewController" customModule="PetrTradr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wdf-2E-8iQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VEH-D7-g5P"/>
@@ -239,7 +245,4 @@
     <resources>
         <image name="PetrLogo" width="1182" height="1178"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="fdm-pU-gIz"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D46F67A23E5F04F00E898DE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46F67923E5F04F00E898DE /* LogInViewController.swift */; };
 		A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D89E23E568D200FF1270 /* AppDelegate.swift */; };
 		A7D1D8A123E568D200FF1270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */; };
 		A7D1D8A623E568D200FF1270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D1D8A423E568D200FF1270 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		07359844E7D7BA218DEA28FA /* Pods_PetrTradr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetrTradr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D46F67923E5F04F00E898DE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		637499B5479D2E7D809F4D06 /* Pods-PetrTradr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrTradr.debug.xcconfig"; path = "Target Support Files/Pods-PetrTradr/Pods-PetrTradr.debug.xcconfig"; sourceTree = "<group>"; };
 		A7D1D89B23E568D200FF1270 /* PetrTradr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrTradr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D1D89E23E568D200FF1270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				A7D1D8AC23E568D400FF1270 /* LaunchScreen.storyboard */,
 				A7D1D8AF23E568D400FF1270 /* Info.plist */,
 				A7D1D8A723E568D200FF1270 /* PetrTradr.xcdatamodeld */,
+				4D46F67923E5F04F00E898DE /* LogInViewController.swift */,
 			);
 			path = PetrTradr;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */,
 				A7D1D8A923E568D200FF1270 /* PetrTradr.xcdatamodeld in Sources */,
 				A7F8538D23E5820400290156 /* HomePageViewController.swift in Sources */,
+				4D46F67A23E5F04F00E898DE /* LogInViewController.swift in Sources */,
 				A7D1D8A123E568D200FF1270 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
