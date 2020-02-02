@@ -11,6 +11,8 @@ import Alamofire
 import Parse
 
 class ReminderFormViewController: UIViewController {
+    
+    public var delegate: PopupVCDelegate?
 
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var addReminderButton: UIButton!
@@ -19,7 +21,11 @@ class ReminderFormViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("DAAATEEEE", Date())
+        //datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: -1, to: Date())
+        let currentDate = Date()
+        datePicker.minimumDate = currentDate
+        datePicker.date = currentDate
         // Do any additional setup after loading the view.
     }
     
@@ -28,16 +34,22 @@ class ReminderFormViewController: UIViewController {
     
     @IBAction func addReminder(_ sender: Any) {
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd MMMM yyyy hh:mm"
-        let selectedDate = dateFormatter.string(from: datePicker.date)
-        print(selectedDate)
+        let dateFormatterForDate = DateFormatter()
+        dateFormatterForDate.dateFormat = "dd MMMM yyyy"
+        let selectedDate = dateFormatterForDate.string(from: datePicker.date)
+        let dateFormatterForTime = DateFormatter()
+        dateFormatterForTime.dateFormat = "hh:mm a"
+        let selectedTime = dateFormatterForTime.string(from: datePicker.date)
         let reminder = PFObject(className:"reminder")
-        reminder["date"] = datePicker.date
-        reminder["bodyContent"] = bodyContextTextField
+        reminder["user"] = PFUser.current()
+        reminder["date"] = selectedDate
+        reminder["time"] = selectedTime
+        reminder["bodyContent"] = bodyContextTextField.text
         reminder.saveInBackground{(succeeded, error) in
             if (succeeded) {
                 //The object has been saved
+                self.dismiss(animated: true, completion: nil)
+                self.delegate?.popupDidDisappear()
             }
             else {
                 //There was a problem, check error description
@@ -47,14 +59,10 @@ class ReminderFormViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func cancelForm(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        self.delegate?.popupDidDisappear()
     }
-    */
+    
 
 }
