@@ -16,10 +16,69 @@ class BigPetrViewController: UIViewController {
     @IBOutlet weak var petrNameLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
     
+    override func viewWillDisappear(_ animated: Bool) {
+        vc?.viewDidLoad()
+    }
+    
     var vc: ProfileViewController?
     
     @IBAction func onMinusButton(_ sender: Any)
     {
+        
+        
+        let user = PFUser.current()
+        var sticker = ""
+        
+        switch petrNameLabel.text!
+        {
+            case "Graduation Petr":
+                sticker = "sticker12"
+            case "Spooky Petr":
+                sticker = "sticker2"
+            case "Turkey Petr":
+                sticker = "sticker3"
+            case "New Year, New Petr":
+                sticker = "sticker5"
+            case "Jolly Petr":
+                sticker = "sticker4"
+            case "Original Petr":
+                sticker = "sticker1"
+            case "Beach Bum Petr":
+                sticker = "sticker9"
+            case "March Madness Petr":
+                sticker = "sticker8"
+            case "Lucky Petr":
+                sticker = "sticker7"
+            case "Romantic Petr":
+                sticker = "sticker6"
+            case "Eastr Petr":
+                sticker = "sticker10"
+            case "Thanos Petr":
+                sticker = "sticker11"
+            
+        default:
+            sticker = "sticker1"
+        }
+        
+        
+        var temp = vc?.stickers[0][sticker] as! Int
+        if(temp >= 1)
+        {
+            temp -= 1
+            numStickerLabel.text = String(temp)
+        }
+        
+        user![sticker] = temp
+        numStickerLabel.text = String(temp)
+        vc?.stickers[0][sticker] = temp
+        
+        user?.saveInBackground(block: { (success, error) in
+            if success
+            {
+                print("added sticker")
+            }
+        })
+        //vc?.viewDidLoad()
         
     }
     
@@ -63,6 +122,9 @@ class BigPetrViewController: UIViewController {
         
         var temp = vc?.stickers[0][sticker] as! Int
         temp += 1
+        
+        numStickerLabel.text = String(temp)
+        
         user![sticker] = temp
         vc?.stickers[0][sticker] = temp
         
@@ -72,8 +134,7 @@ class BigPetrViewController: UIViewController {
                 print("added sticker")
             }
         })
-        
-        vc?.viewDidLoad()
+        //vc?.viewDidLoad()
         
         
     }
@@ -98,7 +159,7 @@ class BigPetrViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
-    */
+    }*/
+    
 
 }
