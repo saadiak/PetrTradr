@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configuration.server = "https://petr-tradr.herokuapp.com/parse"
         }))
         
+        
         return true
     }
 
