@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,38 +28,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3an-kR-Uwd">
-                                <rect key="frame" x="107" y="232" width="200" height="257"/>
+                                <rect key="frame" x="107" y="232" width="200" height="249.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-Xb-TMX">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="32.5"/>
                                         <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="petrtheanteater" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ti0-tK-0vc">
-                                        <rect key="frame" x="0.0" y="45" width="200" height="34"/>
+                                        <rect key="frame" x="0.0" y="42.5" width="200" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1Q-Lq-F3h">
-                                        <rect key="frame" x="0.0" y="89" width="200" height="35"/>
+                                        <rect key="frame" x="0.0" y="86.5" width="200" height="32.5"/>
                                         <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ptrspassword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1V-Yd-y0h">
-                                        <rect key="frame" x="0.0" y="134" width="200" height="34"/>
+                                        <rect key="frame" x="0.0" y="129" width="200" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-Ua-RQD">
-                                        <rect key="frame" x="0.0" y="178" width="200" height="35"/>
+                                        <rect key="frame" x="0.0" y="173" width="200" height="32.5"/>
                                         <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123345678" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ikT-yn-4tY">
-                                        <rect key="frame" x="0.0" y="223" width="200" height="34"/>
+                                        <rect key="frame" x="0.0" y="215.5" width="200" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
@@ -69,7 +69,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPu-kk-LQE">
-                                <rect key="frame" x="56.5" y="71" width="301.5" height="101"/>
+                                <rect key="frame" x="87" y="71" width="240" height="101"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PetrLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kVU-Ym-csJ">
                                         <rect key="frame" x="0.0" y="0.0" width="108" height="101"/>
@@ -79,7 +79,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="t r a d r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqn-0I-c4T">
-                                        <rect key="frame" x="108" y="0.0" width="193.5" height="101"/>
+                                        <rect key="frame" x="108" y="0.0" width="132" height="101"/>
                                         <fontDescription key="fontDescription" name="SKETCHYRegular" family="SKETCHY" pointSize="60"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -87,12 +87,12 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="old-1p-jPs">
-                                <rect key="frame" x="137" y="579" width="140" height="122"/>
+                                <rect key="frame" x="137" y="571.5" width="140" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04v-uO-bwy" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="51"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="45"/>
                                         <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="0.59999999999999998" green="0.71764705880000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -108,9 +108,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqg-77-wQa" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="71" width="140" height="51"/>
+                                        <rect key="frame" x="0.0" y="65" width="140" height="45"/>
                                         <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" red="0.59999999999999998" green="0.71764705880000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -129,7 +129,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADD-dR-BL8" userLabel="Error Label">
-                                <rect key="frame" x="207" y="756.5" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="737" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -219,21 +219,21 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="graduation petr" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83k-hr-4xq">
                                                     <rect key="frame" x="112" y="52" width="218" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="original petr" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFi-km-Y6s">
                                                     <rect key="frame" x="130" y="90" width="199" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peter Anteater" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6E-ky-egx">
                                                     <rect key="frame" x="112" y="14" width="235" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -276,16 +276,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d76-dR-Hpa">
-                                <rect key="frame" x="78" y="161" width="248" height="48"/>
+                                <rect key="frame" x="78" y="161" width="253" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="44"/>
+                                <fontDescription key="fontDescription" name="DKCoverUp-Regular" family="DK Cover Up" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWj-n2-s2G">
-                                <rect key="frame" x="189" y="398" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWj-n2-s2G" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
+                                <rect key="frame" x="164.5" y="391" width="85" height="50"/>
+                                <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="KCT-KR-Rbb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="35"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.71764705880000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="sendMessage:" destination="vlG-J3-YtP" eventType="touchUpInside" id="vtL-Qm-Qk3"/>
                                 </connections>
@@ -298,6 +309,9 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YWj-n2-s2G" firstAttribute="centerX" secondItem="lcK-0D-CiD" secondAttribute="centerX" id="TF1-R8-cDt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RY7-r4-WhY"/>
                     </view>
                     <navigationItem key="navigationItem" id="3fA-qk-FaW"/>
@@ -308,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8Z-0J-aFb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6431.884057971015" y="1154.4642857142856"/>
+            <point key="canvasLocation" x="6431.884057971015" y="1153.7946428571429"/>
         </scene>
         <!--Trade Request View Controller-->
         <scene sceneID="Vll-0h-Wko">
@@ -318,56 +332,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter a Trade Request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxI-Lg-zZS">
-                                <rect key="frame" x="89" y="68" width="236" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter a Trade Request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxI-Lg-zZS">
+                                <rect key="frame" x="72" y="30" width="270.5" height="37.5"/>
+                                <fontDescription key="fontDescription" name="DKCoverUp-Regular" family="DK Cover Up" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which stickers are you willing to give?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhc-yx-weA">
-                                <rect key="frame" x="37" y="322" width="337" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Which stickers are you willing to give?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhc-yx-weA">
+                                <rect key="frame" x="25.5" y="376" width="363" height="29.5"/>
+                                <fontDescription key="fontDescription" name="DKCoverUp-Regular" family="DK Cover Up" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which stickers do you want?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6a8-FI-6kN">
-                                <rect key="frame" x="37" y="121" width="308" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Which stickers do you want?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6a8-FI-6kN">
+                                <rect key="frame" x="71.5" y="121" width="271.5" height="29.5"/>
+                                <fontDescription key="fontDescription" name="DKCoverUp-Regular" family="DK Cover Up" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIH-6c-Dz0">
-                                <rect key="frame" x="-2" y="133" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <pickerView tag="1" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIH-6c-Dz0">
+                                <rect key="frame" x="-2" y="133" width="414" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="VCS-vw-aAa" id="hSG-rz-hPW"/>
                                     <outlet property="delegate" destination="VCS-vw-aAa" id="4iR-RV-2ia"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiO-6Y-hy9">
-                                <rect key="frame" x="127" y="645" width="172" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Submit Request"/>
-                                <connections>
-                                    <action selector="onSubmitRequest:" destination="VCS-vw-aAa" eventType="touchUpInside" id="4i5-uA-5dh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FR7-GA-bTB">
-                                <rect key="frame" x="127" y="715" width="171" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Cancel Request"/>
-                                <connections>
-                                    <action selector="onCancelRequest:" destination="VCS-vw-aAa" eventType="touchUpInside" id="4h2-yi-qWj"/>
-                                </connections>
-                            </button>
-                            <pickerView tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-0C-Y5f">
-                                <rect key="frame" x="-2" y="366" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="L25-Eu-N9k">
+                                <rect key="frame" x="97" y="578" width="220" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiO-6Y-hy9" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="50"/>
+                                        <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="35"/>
+                                        <state key="normal" title="Submit Request">
+                                            <color key="titleColor" red="0.59999999999999998" green="0.71764705880000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onSubmitRequest:" destination="VCS-vw-aAa" eventType="touchUpInside" id="4i5-uA-5dh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FR7-GA-bTB" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="90" width="220" height="50"/>
+                                        <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="35"/>
+                                        <state key="normal" title="Cancel Request">
+                                            <color key="titleColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onCancelRequest:" destination="VCS-vw-aAa" eventType="touchUpInside" id="4h2-yi-qWj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="uF1-tY-PFv"/>
+                                </constraints>
+                            </stackView>
+                            <pickerView tag="2" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-0C-Y5f">
+                                <rect key="frame" x="-2" y="399" width="414" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="VCS-vw-aAa" id="Fim-0r-Lp5"/>
                                     <outlet property="delegate" destination="VCS-vw-aAa" id="Cfw-gM-lsN"/>
@@ -375,6 +406,23 @@
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="L25-Eu-N9k" firstAttribute="centerX" secondItem="vNh-gp-JVJ" secondAttribute="centerX" id="2Ae-bz-OmA"/>
+                            <constraint firstItem="L25-Eu-N9k" firstAttribute="top" secondItem="HVy-0C-Y5f" secondAttribute="bottom" constant="17" id="4XW-xy-oBW"/>
+                            <constraint firstItem="6a8-FI-6kN" firstAttribute="top" secondItem="oxI-Lg-zZS" secondAttribute="bottom" constant="53.5" id="8H9-gU-4Ph"/>
+                            <constraint firstItem="Qhc-yx-weA" firstAttribute="centerX" secondItem="vNh-gp-JVJ" secondAttribute="centerX" id="AR9-HS-14H"/>
+                            <constraint firstItem="Qhc-yx-weA" firstAttribute="top" secondItem="kIH-6c-Dz0" secondAttribute="bottom" constant="27" id="Pn4-nv-yP9"/>
+                            <constraint firstItem="HVy-0C-Y5f" firstAttribute="top" secondItem="kIH-6c-Dz0" secondAttribute="bottom" constant="50" id="PuO-Jl-tGZ"/>
+                            <constraint firstItem="kIH-6c-Dz0" firstAttribute="top" secondItem="oxI-Lg-zZS" secondAttribute="bottom" constant="65.5" id="PwW-zN-fxL"/>
+                            <constraint firstItem="sJl-T3-Xap" firstAttribute="trailing" secondItem="kIH-6c-Dz0" secondAttribute="trailing" constant="2" id="QRK-Ui-k5A"/>
+                            <constraint firstItem="6a8-FI-6kN" firstAttribute="centerX" secondItem="vNh-gp-JVJ" secondAttribute="centerX" id="SiB-Hn-ubM"/>
+                            <constraint firstItem="oxI-Lg-zZS" firstAttribute="centerX" secondItem="vNh-gp-JVJ" secondAttribute="centerX" id="VMM-th-8sE"/>
+                            <constraint firstItem="HVy-0C-Y5f" firstAttribute="leading" secondItem="vNh-gp-JVJ" secondAttribute="leading" constant="-2" id="gfo-fq-kD2"/>
+                            <constraint firstItem="kIH-6c-Dz0" firstAttribute="leading" secondItem="vNh-gp-JVJ" secondAttribute="leading" constant="-2" id="k26-6Q-HlG"/>
+                            <constraint firstItem="oxI-Lg-zZS" firstAttribute="top" secondItem="sJl-T3-Xap" secondAttribute="top" constant="30" id="m4h-q4-eBX"/>
+                            <constraint firstItem="sJl-T3-Xap" firstAttribute="trailing" secondItem="HVy-0C-Y5f" secondAttribute="trailing" constant="2" id="oLJ-BF-CRX"/>
+                            <constraint firstItem="sJl-T3-Xap" firstAttribute="bottom" secondItem="L25-Eu-N9k" secondAttribute="bottom" constant="90" id="y2r-qQ-QS2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sJl-T3-Xap"/>
                     </view>
                     <navigationItem key="navigationItem" id="M4L-Ed-X0w"/>
@@ -385,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6aI-7j-QuX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7067" y="1136"/>
+            <point key="canvasLocation" x="7428" y="1154"/>
         </scene>
         <!--Profile-->
         <scene sceneID="gHH-an-NHb">
@@ -455,7 +503,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKG-d3-n3C">
-                                                <rect key="frame" x="120" y="0.0" width="110.00000000000023" height="125"/>
+                                                <rect key="frame" x="120" y="0.0" width="110" height="125"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="110" id="bqA-Hw-Z7U"/>
                                                     <constraint firstAttribute="height" constant="125" id="oR5-bV-JHY"/>
@@ -549,7 +597,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-SA-uTK">
-                                                <rect key="frame" x="240" y="0.0" width="110" height="125.00000000000011"/>
+                                                <rect key="frame" x="240" y="0.0" width="110" height="125"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="125" id="aeh-Xl-SC6"/>
                                                     <constraint firstAttribute="width" constant="110" id="bau-ev-IIF"/>
@@ -621,49 +669,65 @@
                                     <constraint firstAttribute="height" constant="346" id="5qz-vT-Xop"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZ0-fy-VBd">
-                                <rect key="frame" x="72" y="741" width="30" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZ0-fy-VBd" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
+                                <rect key="frame" x="72" y="741" width="50" height="48"/>
+                                <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="-1"/>
+                                <state key="normal" title="-1">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.71764705880000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onMinusButton:" destination="jzc-nw-izt" eventType="touchUpInside" id="ABv-Jw-aFM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph9-Tf-XS8">
-                                <rect key="frame" x="310" y="741" width="32" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph9-Tf-XS8" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
+                                <rect key="frame" x="292" y="741" width="50" height="48"/>
+                                <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="+1"/>
+                                <state key="normal" title="+1">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.71764705880000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onPlusButton:" destination="jzc-nw-izt" eventType="touchUpInside" id="XBb-4p-E4G"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="dTF-1N-KLu">
-                                <rect key="frame" x="83.5" y="506" width="247" height="173.5"/>
+                                <rect key="frame" x="88.5" y="506" width="237" height="162"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Petr Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHI-ER-PbY">
-                                        <rect key="frame" x="0.0" y="0.0" width="247" height="52.5"/>
-                                        <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="237" height="47"/>
+                                        <fontDescription key="fontDescription" name="DKCoverUp-Regular" family="DK Cover Up" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS1-cr-602">
-                                        <rect key="frame" x="0.0" y="77.5" width="247" height="35.5"/>
-                                        <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="25"/>
+                                        <rect key="frame" x="0.0" y="72" width="237" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hfI-DD-0S1">
-                                        <rect key="frame" x="0.0" y="138" width="247" height="35.5"/>
+                                        <rect key="frame" x="0.0" y="129.5" width="237" height="32.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Stickers:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Y4-LY-lFf">
-                                                <rect key="frame" x="0.0" y="0.0" width="227.5" height="35.5"/>
-                                                <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="218.5" height="32.5"/>
+                                                <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS1-Eb-IQX">
-                                                <rect key="frame" x="232.5" y="0.0" width="14.5" height="35.5"/>
-                                                <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="25"/>
+                                                <rect key="frame" x="223.5" y="0.0" width="13.5" height="32.5"/>
+                                                <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -874,8 +938,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Reminder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7a-N2-aaJ">
-                                <rect key="frame" x="94.5" y="45" width="225" height="41"/>
-                                <fontDescription key="fontDescription" name="DKCoverUp-Regular" family="DK Cover Up" pointSize="35"/>
+                                <rect key="frame" x="99.5" y="45" width="215" height="47"/>
+                                <fontDescription key="fontDescription" name="DKCoverUp-Regular" family="DK Cover Up" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -883,41 +947,23 @@
                                 <rect key="frame" x="0.0" y="315" width="414" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Date and time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZS-UK-TFT">
-                                <rect key="frame" x="31" y="261" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Choose Date and time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZS-UK-TFT">
+                                <rect key="frame" x="85.5" y="261" width="243" height="33"/>
+                                <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3e-PB-whR">
-                                <rect key="frame" x="159" y="530" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Reminder"/>
-                                <connections>
-                                    <action selector="addReminder:" destination="CJG-er-cRQ" eventType="touchUpInside" id="sUH-ZA-z3A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zG-UY-8Jl">
-                                <rect key="frame" x="183" y="568" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cancel"/>
-                                <connections>
-                                    <action selector="cancelAction:" destination="CJG-er-cRQ" eventType="touchUpInside" id="gNC-F9-OfE"/>
-                                    <action selector="cancelForm:" destination="CJG-er-cRQ" eventType="touchUpInside" id="cQe-Y8-tGs"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5PA-nq-LBk">
-                                <rect key="frame" x="69.5" y="116" width="275" height="64"/>
+                                <rect key="frame" x="69.5" y="122" width="275" height="76.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter reminder content:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3w-kJ-Lnk">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="20"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reminder..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7A-OJ-W0O">
-                                        <rect key="frame" x="0.0" y="30" width="275" height="34"/>
+                                        <rect key="frame" x="0.0" y="42.5" width="275" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -926,13 +972,57 @@
                                     <constraint firstAttribute="width" constant="275" id="Kyu-yF-s8j"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="aui-X6-bZT">
+                                <rect key="frame" x="122" y="578" width="170" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3e-PB-whR" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="45"/>
+                                        <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
+                                        <state key="normal" title="Add Reminder">
+                                            <color key="titleColor" red="0.59999999999999998" green="0.71764705880000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addReminder:" destination="CJG-er-cRQ" eventType="touchUpInside" id="sUH-ZA-z3A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zG-UY-8Jl" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="85" width="170" height="45"/>
+                                        <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="30"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.59999999999999998" green="0.71764705880000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelAction:" destination="CJG-er-cRQ" eventType="touchUpInside" id="gNC-F9-OfE"/>
+                                            <action selector="cancelForm:" destination="CJG-er-cRQ" eventType="touchUpInside" id="cQe-Y8-tGs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="qKD-zR-jSs"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="DZS-UK-TFT" firstAttribute="centerX" secondItem="5qa-ri-ajr" secondAttribute="centerX" id="1r8-cg-4gb"/>
                             <constraint firstItem="5PA-nq-LBk" firstAttribute="top" secondItem="g7a-N2-aaJ" secondAttribute="bottom" constant="30" id="9m5-0R-o9Y"/>
+                            <constraint firstItem="aui-X6-bZT" firstAttribute="centerX" secondItem="5qa-ri-ajr" secondAttribute="centerX" id="FSA-Mh-zbV"/>
                             <constraint firstItem="g7a-N2-aaJ" firstAttribute="centerX" secondItem="5qa-ri-ajr" secondAttribute="centerX" id="HgH-A3-TwN"/>
                             <constraint firstItem="g7a-N2-aaJ" firstAttribute="top" secondItem="IOg-YU-vKx" secondAttribute="top" constant="45" id="Y2X-sr-RrJ"/>
                             <constraint firstItem="5PA-nq-LBk" firstAttribute="centerX" secondItem="5qa-ri-ajr" secondAttribute="centerX" id="cVj-cP-c8t"/>
+                            <constraint firstItem="IOg-YU-vKx" firstAttribute="bottom" secondItem="aui-X6-bZT" secondAttribute="bottom" constant="100" id="fVY-eH-RVU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IOg-YU-vKx"/>
                     </view>
