@@ -52,7 +52,7 @@ class ProfileViewController: UIViewController {
         buttonNames = ["sticker1", "sticker2", "sticker3", "sticker4", "sticker5", "sticker6",
                        "sticker7", "sticker8", "sticker9", "sticker10", "sticker11", "sticker12"]
         
-        userHandle.text = "@" + globalUser
+        userHandle.text = "@" + globalUser + "'s petr stickerbook"
     }
     
     func loadStickers()
