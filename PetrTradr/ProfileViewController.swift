@@ -59,15 +59,18 @@ class ProfileViewController: UIViewController {
             if request != nil
             {
                 self.stickers = request!
-                print(self.stickers)
                 for n in 0...11
                 {
-                    let a = "sticker" + String(n)
+                    let a = "sticker" + String(n+1)
                     self.stickerCounts[n] = self.stickers[0][a] as? Int ?? 0
                     
                     if self.stickerCounts[n] == 0
                     {
                         (self.petrButtons[n]).alpha = 0.30
+                    }
+                    else
+                    {
+                        (self.petrButtons[n]).alpha = 1.0
                     }
                     
                 }

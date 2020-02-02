@@ -73,6 +73,8 @@ class BigPetrViewController: UIViewController {
             }
         })
         
+        vc?.viewDidLoad()
+        
         
     }
     
