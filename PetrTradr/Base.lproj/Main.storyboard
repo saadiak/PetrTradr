@@ -328,7 +328,182 @@
                     <view key="view" contentMode="scaleToFill" id="Wdf-2E-8iQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nUN-OJ-RYJ">
+                                <rect key="frame" x="25" y="188" width="350" height="560"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7EV-5d-13z">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="125"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G51-bV-IiA">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="3bP-Zk-wnL"/>
+                                                    <constraint firstAttribute="height" constant="125" id="ha7-oP-Ocm"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="OGpetr"/>
+                                                <connections>
+                                                    <action selector="onOG:" destination="qO1-X5-ryj" eventType="touchUpInside" id="GaO-uu-tnR"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="333-MP-Pzn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euS-Rd-BVH">
+                                                <rect key="frame" x="120" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="4B6-tl-j5u"/>
+                                                    <constraint firstAttribute="height" constant="125" id="yDY-DB-2CO"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="SpookyPetr"/>
+                                                <connections>
+                                                    <action selector="onSpooky:" destination="qO1-X5-ryj" eventType="touchUpInside" id="pYD-dV-MLs"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="vTC-FZ-YHD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXo-dU-uOh">
+                                                <rect key="frame" x="240" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="G1I-rr-7XC"/>
+                                                    <constraint firstAttribute="width" constant="110" id="xe6-eS-6YR"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="TurkeyPetr"/>
+                                                <connections>
+                                                    <action selector="onThanks:" destination="qO1-X5-ryj" eventType="touchUpInside" id="Y1H-e3-B8f"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="zb4-V0-MdC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-cl-3VY">
+                                        <rect key="frame" x="0.0" y="145" width="350" height="125"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXp-av-MF3">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="CTv-Ap-589"/>
+                                                    <constraint firstAttribute="height" constant="125" id="hWC-pz-Lza"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="JollyPetr"/>
+                                                <connections>
+                                                    <action selector="onSanta:" destination="qO1-X5-ryj" eventType="touchUpInside" id="gci-uD-PQb"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="FxG-W2-CKa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKG-d3-n3C">
+                                                <rect key="frame" x="120" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="bqA-Hw-Z7U"/>
+                                                    <constraint firstAttribute="height" constant="125" id="oR5-bV-JHY"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="2019Petr"/>
+                                                <connections>
+                                                    <action selector="onNewYear:" destination="qO1-X5-ryj" eventType="touchUpInside" id="POX-Nk-OXj"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="0lu-Km-GRu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zt-IR-6Z3">
+                                                <rect key="frame" x="240" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="TDn-MX-pL7"/>
+                                                    <constraint firstAttribute="height" constant="125" id="iVu-yG-DTI"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="RomanticPetr"/>
+                                                <connections>
+                                                    <action selector="onCupid:" destination="qO1-X5-ryj" eventType="touchUpInside" id="zOB-LY-9C9"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="czN-jc-hXd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TR7-d5-q7l">
+                                        <rect key="frame" x="0.0" y="290" width="350" height="125"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iO-pO-eEo">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="AEo-7m-p4f"/>
+                                                    <constraint firstAttribute="width" constant="110" id="E4N-uo-PVN"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="LuckyPetr"/>
+                                                <connections>
+                                                    <action selector="onLeprechaun:" destination="qO1-X5-ryj" eventType="touchUpInside" id="v7j-fd-pXT"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="nDi-XJ-MX4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qco-bg-z3a">
+                                                <rect key="frame" x="120" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="e7I-Ei-OYS"/>
+                                                    <constraint firstAttribute="width" constant="110" id="hWc-5J-kAa"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="MarchMadnessPetr"/>
+                                                <connections>
+                                                    <action selector="onBBall:" destination="qO1-X5-ryj" eventType="touchUpInside" id="5F8-OH-f40"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="80h-3N-gKU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uY0-0r-wHs">
+                                                <rect key="frame" x="240" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="DB1-zu-vsb"/>
+                                                    <constraint firstAttribute="height" constant="125" id="hPZ-lz-mf8"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="BeachBumPetr"/>
+                                                <connections>
+                                                    <action selector="onSummer:" destination="qO1-X5-ryj" eventType="touchUpInside" id="gVD-cA-nto"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="gSO-dQ-43B"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QtE-6j-ksQ">
+                                        <rect key="frame" x="0.0" y="435" width="350" height="125"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-Wm-bSA">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="2ok-j6-iN7"/>
+                                                    <constraint firstAttribute="width" constant="110" id="dWn-8g-3Dv"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="EastrPetr"/>
+                                                <connections>
+                                                    <action selector="onEaster:" destination="qO1-X5-ryj" eventType="touchUpInside" id="YKb-jz-jfF"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="qvZ-sB-ElH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI9-zN-YwP">
+                                                <rect key="frame" x="120" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="M5r-1s-tCc"/>
+                                                    <constraint firstAttribute="height" constant="125" id="yP8-7E-04r"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="ThanosPetr"/>
+                                                <connections>
+                                                    <action selector="onThanos:" destination="qO1-X5-ryj" eventType="touchUpInside" id="Ub7-2H-Bae"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="seP-fH-qzw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-SA-uTK">
+                                                <rect key="frame" x="240" y="0.0" width="110" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="aeh-Xl-SC6"/>
+                                                    <constraint firstAttribute="width" constant="110" id="bau-ev-IIF"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="GraduationPetr"/>
+                                                <connections>
+                                                    <action selector="onGraduation:" destination="qO1-X5-ryj" eventType="touchUpInside" id="AdW-ke-sBC"/>
+                                                    <segue destination="jzc-nw-izt" kind="show" id="Iva-W1-Rd2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nUN-OJ-RYJ" firstAttribute="leading" secondItem="VEH-D7-g5P" secondAttribute="leading" constant="25" id="3Fe-kg-CbV"/>
+                            <constraint firstItem="nUN-OJ-RYJ" firstAttribute="top" secondItem="VEH-D7-g5P" secondAttribute="top" constant="100" id="O8n-fu-iAs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VEH-D7-g5P"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="L4d-F8-Dqs">
@@ -338,10 +513,98 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sticker1" destination="G51-bV-IiA" id="Mvd-5a-cji"/>
+                        <outlet property="sticker10" destination="mdq-Wm-bSA" id="SMf-Jf-SoP"/>
+                        <outlet property="sticker11" destination="gI9-zN-YwP" id="1xK-yN-PaF"/>
+                        <outlet property="sticker12" destination="8KG-SA-uTK" id="deM-I0-Oa7"/>
+                        <outlet property="sticker2" destination="euS-Rd-BVH" id="chq-fk-TE3"/>
+                        <outlet property="sticker3" destination="wXo-dU-uOh" id="SAn-Ex-lLG"/>
+                        <outlet property="sticker4" destination="jXp-av-MF3" id="cfq-U9-INK"/>
+                        <outlet property="sticker5" destination="aKG-d3-n3C" id="N0I-OE-cTT"/>
+                        <outlet property="sticker6" destination="9zt-IR-6Z3" id="Vys-SN-a14"/>
+                        <outlet property="sticker7" destination="9iO-pO-eEo" id="c9c-Ai-7K4"/>
+                        <outlet property="sticker8" destination="Qco-bg-z3a" id="zM5-Y3-aBm"/>
+                        <outlet property="sticker9" destination="uY0-0r-wHs" id="irC-Dk-eaG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oK-Sf-QX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5913.04347826087" y="484.82142857142856"/>
+        </scene>
+        <!--Big Petr View Controller-->
+        <scene sceneID="Ajk-Cm-m38">
+            <objects>
+                <viewController id="jzc-nw-izt" customClass="BigPetrViewController" customModule="PetrTradr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y0J-4x-FMP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7Z-mf-xbW">
+                                <rect key="frame" x="20" y="136" width="374" height="346"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Petr Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHI-ER-PbY">
+                                <rect key="frame" x="20" y="532" width="374" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZ0-fy-VBd">
+                                <rect key="frame" x="55" y="741" width="30" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="-1"/>
+                                <connections>
+                                    <action selector="onMinusButton:" destination="jzc-nw-izt" eventType="touchUpInside" id="ABv-Jw-aFM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph9-Tf-XS8">
+                                <rect key="frame" x="310" y="741" width="32" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+1"/>
+                                <connections>
+                                    <action selector="onPlusButton:" destination="jzc-nw-izt" eventType="touchUpInside" id="XBb-4p-E4G"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Release Date:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS1-cr-602">
+                                <rect key="frame" x="100" y="585" width="214" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# of Stickers:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Y4-LY-lFf">
+                                <rect key="frame" x="107" y="660" width="125" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS1-Eb-IQX">
+                                <rect key="frame" x="259" y="661" width="14" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="E1o-Pf-qAw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NZ9-sr-gfR"/>
+                    <connections>
+                        <outlet property="numStickerLabel" destination="SS1-Eb-IQX" id="e3l-GA-4JH"/>
+                        <outlet property="petrImage" destination="U7Z-mf-xbW" id="JxA-UH-lFp"/>
+                        <outlet property="petrNameLabel" destination="lHI-ER-PbY" id="XN8-cG-SRN"/>
+                        <outlet property="releaseDateLabel" destination="oS1-cr-602" id="uc6-xf-Ebr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ShV-Eo-96Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6788.4057971014499" y="484.82142857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vTq-Is-YnG">
@@ -634,10 +897,25 @@
         </scene>
     </scenes>
     <resources>
+        <image name="2019Petr" width="1122" height="1090"/>
+        <image name="BeachBumPetr" width="541" height="525"/>
+        <image name="EastrPetr" width="545" height="533"/>
+        <image name="GraduationPetr" width="554" height="561"/>
         <image name="Image" width="32" height="32"/>
+        <image name="JollyPetr" width="552" height="529"/>
+        <image name="LuckyPetr" width="510" height="522"/>
+        <image name="MarchMadnessPetr" width="515" height="512"/>
+        <image name="OGpetr" width="490" height="552"/>
         <image name="PetrLogo" width="1182" height="1178"/>
         <image name="Profile" width="32" height="32"/>
+        <image name="RomanticPetr" width="534" height="526"/>
+        <image name="SpookyPetr" width="1174" height="1078"/>
+        <image name="ThanosPetr" width="570" height="544"/>
         <image name="Trade" width="32" height="32"/>
+        <image name="TurkeyPetr" width="1100" height="1136"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="333-MP-Pzn"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -27,7 +27,7 @@ class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDat
     {
         let query = PFQuery(className: "TradeRequests")
         query.includeKeys(["user"])
-        
+                
         query.findObjectsInBackground { (request, error) in
             if request != nil
             {

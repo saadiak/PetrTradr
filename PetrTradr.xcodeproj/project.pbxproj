@@ -10,6 +10,7 @@
 		4D46F67A23E5F04F00E898DE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46F67923E5F04F00E898DE /* LogInViewController.swift */; };
 		4DAA1A7C23E64F1100181C2F /* TradeRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA1A7B23E64F1100181C2F /* TradeRequestViewController.swift */; };
 		4DAA1A7E23E683AD00181C2F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA1A7D23E683AD00181C2F /* ProfileViewController.swift */; };
+		4DAA1A8023E68D8200181C2F /* BigPetrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA1A7F23E68D8200181C2F /* BigPetrViewController.swift */; };
 		4DEF699A23E60B930070D413 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF699923E60B930070D413 /* TradeViewController.swift */; };
 		4DEF699C23E612A10070D413 /* TradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF699B23E612A10070D413 /* TradeTableViewCell.swift */; };
 		A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D89E23E568D200FF1270 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 		4D46F67923E5F04F00E898DE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		4DAA1A7B23E64F1100181C2F /* TradeRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRequestViewController.swift; sourceTree = "<group>"; };
 		4DAA1A7D23E683AD00181C2F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4DAA1A7F23E68D8200181C2F /* BigPetrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigPetrViewController.swift; sourceTree = "<group>"; };
 		4DEF699923E60B930070D413 /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
 		4DEF699B23E612A10070D413 /* TradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeTableViewCell.swift; sourceTree = "<group>"; };
 		637499B5479D2E7D809F4D06 /* Pods-PetrTradr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrTradr.debug.xcconfig"; path = "Target Support Files/Pods-PetrTradr/Pods-PetrTradr.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				4DEF699B23E612A10070D413 /* TradeTableViewCell.swift */,
 				4DAA1A7B23E64F1100181C2F /* TradeRequestViewController.swift */,
 				4DAA1A7D23E683AD00181C2F /* ProfileViewController.swift */,
+				4DAA1A7F23E68D8200181C2F /* BigPetrViewController.swift */,
 			);
 			path = PetrTradr;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				A7D1D8A923E568D200FF1270 /* PetrTradr.xcdatamodeld in Sources */,
 				4DEF699C23E612A10070D413 /* TradeTableViewCell.swift in Sources */,
 				A7F8538D23E5820400290156 /* HomePageViewController.swift in Sources */,
+				4DAA1A8023E68D8200181C2F /* BigPetrViewController.swift in Sources */,
 				4DAA1A7E23E683AD00181C2F /* ProfileViewController.swift in Sources */,
 				B17513C923E602FD00B81532 /* ReminderCell.swift in Sources */,
 				4D46F67A23E5F04F00E898DE /* LogInViewController.swift in Sources */,
