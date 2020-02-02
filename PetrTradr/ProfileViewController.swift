@@ -11,6 +11,7 @@ import Parse
 
 class ProfileViewController: UIViewController {
 
+    var globalUser = ""
     
     @IBOutlet weak var sticker1: UIButton!
     @IBOutlet weak var sticker2: UIButton!
@@ -24,6 +25,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var sticker10: UIButton!
     @IBOutlet weak var sticker11: UIButton!
     @IBOutlet weak var sticker12: UIButton!
+    
+    
+    @IBOutlet weak var userHandle: UILabel!
     
     var imageName = ""
     var stickerCount = 0
@@ -47,6 +51,8 @@ class ProfileViewController: UIViewController {
         sticker7, sticker8, sticker9, sticker10, sticker11, sticker12]
         buttonNames = ["sticker1", "sticker2", "sticker3", "sticker4", "sticker5", "sticker6",
                        "sticker7", "sticker8", "sticker9", "sticker10", "sticker11", "sticker12"]
+        
+        userHandle.text = "@" + globalUser
     }
     
     func loadStickers()
@@ -54,7 +60,7 @@ class ProfileViewController: UIViewController {
         let user = PFUser.current()?.username
         let query = PFQuery(className: "_User")
         query.whereKey("username", equalTo: user)
-                
+        globalUser = user ?? ""
         query.findObjectsInBackground { (request, error) in
             if request != nil
             {

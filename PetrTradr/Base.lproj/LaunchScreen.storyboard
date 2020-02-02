@@ -6,11 +6,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SKETCHY.ttf">
-            <string>SKETCHYRegular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="vef-l0-W8c">
@@ -21,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QG9-hk-fvx">
-                                <rect key="frame" x="26" y="202" width="362" height="492"/>
+                                <rect key="frame" x="26" y="172" width="362" height="552"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PetrLogo" translatesAutoresizingMaskIntoConstraints="NO" id="F6R-gp-Y5m">
                                         <rect key="frame" x="0.0" y="0.0" width="362" height="406"/>
@@ -32,12 +27,9 @@
                                             <constraint firstAttribute="width" constant="362" id="jPy-QR-Lei"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="t r a d r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Td-eV-u5I">
-                                        <rect key="frame" x="0.0" y="406" width="362" height="86"/>
-                                        <fontDescription key="fontDescription" name="SKETCHYRegular" family="SKETCHY" pointSize="88"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tradr logo" translatesAutoresizingMaskIntoConstraints="NO" id="rV7-ek-nzi">
+                                        <rect key="frame" x="0.0" y="406" width="362" height="146"/>
+                                    </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -56,5 +48,6 @@
     </scenes>
     <resources>
         <image name="PetrLogo" width="1182" height="1178"/>
+        <image name="tradr logo" width="448" height="146"/>
     </resources>
 </document>

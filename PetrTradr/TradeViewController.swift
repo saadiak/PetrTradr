@@ -53,7 +53,7 @@ class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let current_request = requests[indexPath.row]
         
-        cell.usernameLabel.text = current_request["username"] as! String
+        cell.usernameLabel.text = "@" + (current_request["username"] as! String)
         cell.willingToGiveLabel.text = current_request["my_stickers"] as! String
         cell.lookingForLabel.text = current_request["want_stickers"] as! String
 

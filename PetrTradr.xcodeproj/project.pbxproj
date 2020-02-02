@@ -16,6 +16,7 @@
 		A75192CE23E6E86000F60FD8 /* WeJustWantRoundedButtonsOkay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75192CD23E6E86000F60FD8 /* WeJustWantRoundedButtonsOkay.swift */; };
 		A78A9D6223E6DB3F008D6BAF /* SKETCHY.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A78A9D6123E6DB3F008D6BAF /* SKETCHY.ttf */; };
 		A78A9D6423E6DC7B008D6BAF /* simplicity.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A78A9D6323E6DC7B008D6BAF /* simplicity.ttf */; };
+		A7B7DA8E23E6F96800513672 /* DK Cover Up.otf in Resources */ = {isa = PBXBuildFile; fileRef = A7B7DA8D23E6F96700513672 /* DK Cover Up.otf */; };
 		A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D89E23E568D200FF1270 /* AppDelegate.swift */; };
 		A7D1D8A123E568D200FF1270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */; };
 		A7D1D8A623E568D200FF1270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D1D8A423E568D200FF1270 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		A75192CD23E6E86000F60FD8 /* WeJustWantRoundedButtonsOkay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJustWantRoundedButtonsOkay.swift; sourceTree = "<group>"; };
 		A78A9D6123E6DB3F008D6BAF /* SKETCHY.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SKETCHY.ttf; sourceTree = "<group>"; };
 		A78A9D6323E6DC7B008D6BAF /* simplicity.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = simplicity.ttf; sourceTree = "<group>"; };
+		A7B7DA8D23E6F96700513672 /* DK Cover Up.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DK Cover Up.otf"; sourceTree = "<group>"; };
 		A7D1D89B23E568D200FF1270 /* PetrTradr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrTradr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D1D89E23E568D200FF1270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				A78A9D6323E6DC7B008D6BAF /* simplicity.ttf */,
 				A78A9D6123E6DB3F008D6BAF /* SKETCHY.ttf */,
+				A7B7DA8D23E6F96700513672 /* DK Cover Up.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7D1D8AE23E568D400FF1270 /* LaunchScreen.storyboard in Resources */,
+				A7B7DA8E23E6F96800513672 /* DK Cover Up.otf in Resources */,
 				A7D1D8AB23E568D400FF1270 /* Assets.xcassets in Resources */,
 				A78A9D6223E6DB3F008D6BAF /* SKETCHY.ttf in Resources */,
 				A78A9D6423E6DC7B008D6BAF /* simplicity.ttf in Resources */,
