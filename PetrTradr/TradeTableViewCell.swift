@@ -14,9 +14,11 @@ class TradeTableViewCell: UITableViewCell {
     @IBOutlet weak var lookingForLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
    
+    var vc: TradeViewController?
     
     @IBAction func onContact(_ sender: Any)
     {
+        vc!.selectedUserName = usernameLabel.text!
     }
     
     

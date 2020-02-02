@@ -12,7 +12,7 @@ import Parse
 class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     @IBOutlet weak var tradeTableView: UITableView!
-    
+    var selectedUserName = ""
     var requests = [PFObject]()
     
     override func viewDidLoad() {
@@ -56,7 +56,7 @@ class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.usernameLabel.text = "@" + (current_request["username"] as! String)
         cell.willingToGiveLabel.text = current_request["my_stickers"] as! String
         cell.lookingForLabel.text = current_request["want_stickers"] as! String
-
+        cell.vc = self
         return cell
     }
     
@@ -70,6 +70,9 @@ class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         {
             let destination = segue.destination as! TradeRequestViewController
             destination.vc = self
+        } else if (segue.identifier == "enterMessage") {
+            let destination = segue.destination as! ContactViewController
+            destination.userNameRequest = selectedUserName
         }
         
 

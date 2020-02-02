@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Parse
 
 class ContactViewController: UIViewController {
 
@@ -19,23 +20,40 @@ class ContactViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var userNameRequest: String?
+    
     @IBAction func sendMessage(_ sender: Any) {
-        let url = "https://api.twilio.com/2010-04-01/Accounts/AC7cfd2ae05be5d65652bf07532561cf34/Messages"
-        let messageText = messageField.text ?? ""
-        let parameters = ["From": "+19172424683", "To": "+17142764581", "Body": messageText]
-         
-        Alamofire.request(url, method: .post, parameters: parameters)
-          .authenticate(user: "AC7cfd2ae05be5d65652bf07532561cf34", password: "88f6d63250223ece2d5aeb93caea800a")
-          .responseJSON { response in
-            debugPrint(response)
-        }
-        //self.navigationController?.popToRootViewController(animated: true)
-        let alert = UIAlertController(title: "Success!", message: "Message sent!", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {
-            action in
-            self.navigationController?.popToRootViewController(animated: true)
-        }))
-        self.present(alert, animated: true, completion: nil)
+        
+        var userData =  [PFObject]()
+        let query = PFQuery(className: "_User")
+        let user = userNameRequest?.replacingOccurrences(of: "@", with: "")
+        query.whereKey("username", equalTo: user)
+        query.findObjectsInBackground { (request, error) in
+              if request != nil
+              {
+                userData = request!
+              }
+            
+            //Then you can access user_data[0][“phone_number”]
+            let num = "+1" + String(userData[0]["phone_number"] as! String)
+            let url = "https://api.twilio.com/2010-04-01/Accounts/AC7cfd2ae05be5d65652bf07532561cf34/Messages"
+            let messageText = self.messageField.text ?? ""
+            let parameters = ["From": "+19172424683", "To": num, "Body": messageText]
+             
+            Alamofire.request(url, method: .post, parameters: parameters)
+              .authenticate(user: "AC7cfd2ae05be5d65652bf07532561cf34", password: "88f6d63250223ece2d5aeb93caea800a")
+              .responseJSON { response in
+                debugPrint(response)
+            }
+            //self.navigationController?.popToRootViewController(animated: true)
+            let alert = UIAlertController(title: "Success!", message: "Message sent!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {
+                action in
+                self.navigationController?.popToRootViewController(animated: true)
+            }))
+            self.present(alert, animated: true, completion: nil)
+            }
+        
     }
     
     /*
