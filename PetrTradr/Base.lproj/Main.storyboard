@@ -332,44 +332,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a Trade Request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxI-Lg-zZS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter a Trade Request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxI-Lg-zZS">
                                 <rect key="frame" x="72" y="30" width="270.5" height="37.5"/>
                                 <fontDescription key="fontDescription" name="DKCoverUp-Regular" family="DK Cover Up" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Which stickers are you willing to give?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhc-yx-weA">
-                                <rect key="frame" x="25.5" y="322" width="363" height="71"/>
+                                <rect key="frame" x="25.5" y="376" width="363" height="29.5"/>
                                 <fontDescription key="fontDescription" name="DKCoverUp-Regular" family="DK Cover Up" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Which stickers do you want?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6a8-FI-6kN">
-                                <rect key="frame" x="71.5" y="121" width="271.5" height="30"/>
+                                <rect key="frame" x="71.5" y="121" width="271.5" height="29.5"/>
                                 <fontDescription key="fontDescription" name="DKCoverUp-Regular" family="DK Cover Up" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIH-6c-Dz0">
-                                <rect key="frame" x="-2" y="133" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <pickerView tag="1" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIH-6c-Dz0">
+                                <rect key="frame" x="-2" y="133" width="414" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="VCS-vw-aAa" id="hSG-rz-hPW"/>
                                     <outlet property="delegate" destination="VCS-vw-aAa" id="4iR-RV-2ia"/>
                                 </connections>
                             </pickerView>
-                            <pickerView tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-0C-Y5f">
-                                <rect key="frame" x="-2" y="366" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="VCS-vw-aAa" id="Fim-0r-Lp5"/>
-                                    <outlet property="delegate" destination="VCS-vw-aAa" id="Cfw-gM-lsN"/>
-                                </connections>
-                            </pickerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="L25-Eu-N9k">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="L25-Eu-N9k">
                                 <rect key="frame" x="97" y="578" width="220" height="140"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiO-6Y-hy9" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiO-6Y-hy9" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="220" height="50"/>
                                         <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="35"/>
@@ -385,7 +376,7 @@
                                             <action selector="onSubmitRequest:" destination="VCS-vw-aAa" eventType="touchUpInside" id="4i5-uA-5dh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FR7-GA-bTB" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FR7-GA-bTB" customClass="RoundButton" customModule="PetrTradr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="220" height="50"/>
                                         <color key="backgroundColor" red="0.29803921570000003" green="0.35686274509999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Simplicity" family="Simplicity" pointSize="35"/>
@@ -406,14 +397,30 @@
                                     <constraint firstAttribute="width" constant="220" id="uF1-tY-PFv"/>
                                 </constraints>
                             </stackView>
+                            <pickerView tag="2" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-0C-Y5f">
+                                <rect key="frame" x="-2" y="399" width="414" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VCS-vw-aAa" id="Fim-0r-Lp5"/>
+                                    <outlet property="delegate" destination="VCS-vw-aAa" id="Cfw-gM-lsN"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="L25-Eu-N9k" firstAttribute="centerX" secondItem="vNh-gp-JVJ" secondAttribute="centerX" id="2Ae-bz-OmA"/>
+                            <constraint firstItem="L25-Eu-N9k" firstAttribute="top" secondItem="HVy-0C-Y5f" secondAttribute="bottom" constant="17" id="4XW-xy-oBW"/>
+                            <constraint firstItem="6a8-FI-6kN" firstAttribute="top" secondItem="oxI-Lg-zZS" secondAttribute="bottom" constant="53.5" id="8H9-gU-4Ph"/>
                             <constraint firstItem="Qhc-yx-weA" firstAttribute="centerX" secondItem="vNh-gp-JVJ" secondAttribute="centerX" id="AR9-HS-14H"/>
+                            <constraint firstItem="Qhc-yx-weA" firstAttribute="top" secondItem="kIH-6c-Dz0" secondAttribute="bottom" constant="27" id="Pn4-nv-yP9"/>
+                            <constraint firstItem="HVy-0C-Y5f" firstAttribute="top" secondItem="kIH-6c-Dz0" secondAttribute="bottom" constant="50" id="PuO-Jl-tGZ"/>
+                            <constraint firstItem="kIH-6c-Dz0" firstAttribute="top" secondItem="oxI-Lg-zZS" secondAttribute="bottom" constant="65.5" id="PwW-zN-fxL"/>
+                            <constraint firstItem="sJl-T3-Xap" firstAttribute="trailing" secondItem="kIH-6c-Dz0" secondAttribute="trailing" constant="2" id="QRK-Ui-k5A"/>
                             <constraint firstItem="6a8-FI-6kN" firstAttribute="centerX" secondItem="vNh-gp-JVJ" secondAttribute="centerX" id="SiB-Hn-ubM"/>
                             <constraint firstItem="oxI-Lg-zZS" firstAttribute="centerX" secondItem="vNh-gp-JVJ" secondAttribute="centerX" id="VMM-th-8sE"/>
+                            <constraint firstItem="HVy-0C-Y5f" firstAttribute="leading" secondItem="vNh-gp-JVJ" secondAttribute="leading" constant="-2" id="gfo-fq-kD2"/>
+                            <constraint firstItem="kIH-6c-Dz0" firstAttribute="leading" secondItem="vNh-gp-JVJ" secondAttribute="leading" constant="-2" id="k26-6Q-HlG"/>
                             <constraint firstItem="oxI-Lg-zZS" firstAttribute="top" secondItem="sJl-T3-Xap" secondAttribute="top" constant="30" id="m4h-q4-eBX"/>
+                            <constraint firstItem="sJl-T3-Xap" firstAttribute="trailing" secondItem="HVy-0C-Y5f" secondAttribute="trailing" constant="2" id="oLJ-BF-CRX"/>
                             <constraint firstItem="sJl-T3-Xap" firstAttribute="bottom" secondItem="L25-Eu-N9k" secondAttribute="bottom" constant="90" id="y2r-qQ-QS2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sJl-T3-Xap"/>
