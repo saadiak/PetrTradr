@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ContactViewController: UIViewController {
 
@@ -19,6 +20,22 @@ class ContactViewController: UIViewController {
     }
     
     @IBAction func sendMessage(_ sender: Any) {
+        let url = "https://api.twilio.com/2010-04-01/Accounts/AC7cfd2ae05be5d65652bf07532561cf34/Messages"
+        let messageText = messageField.text ?? ""
+        let parameters = ["From": "+19172424683", "To": "+17142764581", "Body": messageText]
+         
+        Alamofire.request(url, method: .post, parameters: parameters)
+          .authenticate(user: "AC7cfd2ae05be5d65652bf07532561cf34", password: "88f6d63250223ece2d5aeb93caea800a")
+          .responseJSON { response in
+            debugPrint(response)
+        }
+        //self.navigationController?.popToRootViewController(animated: true)
+        let alert = UIAlertController(title: "Success!", message: "Message sent!", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {
+            action in
+            self.navigationController?.popToRootViewController(animated: true)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
     /*

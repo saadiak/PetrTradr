@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Parse
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configuration.applicationId = "PetrTradr"
             configuration.server = "https://petr-tradr.herokuapp.com/parse"
         }))
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) {
+          (granted, error) in
+        }
         
         
         return true

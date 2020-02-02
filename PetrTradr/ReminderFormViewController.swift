@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import Parse
+import UserNotifications
 
 class ReminderFormViewController: UIViewController {
     
@@ -55,6 +56,21 @@ class ReminderFormViewController: UIViewController {
                 //There was a problem, check error description
             }
             
+        }
+        
+         
+        let content = UNMutableNotificationContent()
+        content.title = "Petr Drop Reminder"
+        content.body = bodyContextTextField.text ?? ""
+         
+        let date = datePicker.date
+        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+        let uuidString = UUID().uuidString
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+         
+        UNUserNotificationCenter.current().add(request) { (error) in
+           
         }
     }
     
