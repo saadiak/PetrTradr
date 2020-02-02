@@ -26,14 +26,19 @@ class ReminderTableViewController: UIViewController, UITableViewDataSource, UITa
         // Do any additional setup after loading the view.
     }
     func queryForDatabase(){
+        self.reminderList = []
         let query = PFQuery(className:"reminder")
         query.includeKeys(["date", "time", "bodyContent"])
         query.findObjectsInBackground { (objects, error) in
-          if let objects = objects {
-            //Success!
-            self.reminderList = objects
-            self.tableView.reloadData()
-            print(self.reminderList)
+          if objects != nil {
+            for object in objects! {
+                //Success!
+                if object["user"] as? String == PFUser.current()?.username {
+                    self.reminderList.append(object)
+                    self.tableView.reloadData()
+                    print(self.reminderList)
+                }
+            }
           }
           else {
             //Fail!

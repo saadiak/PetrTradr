@@ -41,7 +41,7 @@ class ReminderFormViewController: UIViewController {
         dateFormatterForTime.dateFormat = "hh:mm a"
         let selectedTime = dateFormatterForTime.string(from: datePicker.date)
         let reminder = PFObject(className:"reminder")
-        reminder["user"] = PFUser.current()
+        reminder["user"] = PFUser.current()?.username
         reminder["date"] = selectedDate
         reminder["time"] = selectedTime
         reminder["bodyContent"] = bodyContextTextField.text
