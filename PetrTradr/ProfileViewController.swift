@@ -88,7 +88,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onGraduation(_ sender: Any)
     {
         imageName = "GraduationPetr"
-        releaseDate = "September 2018"
+        releaseDate = "June 2019"
         stickerName = "Graduation Petr"
         stickerCount = stickers[0]["sticker12"] as! Int
     }
@@ -97,7 +97,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onThanos(_ sender: Any)
     {
         imageName = "ThanosPetr"
-        releaseDate = "September 2018"
+        releaseDate = "May 2019"
         stickerName = "Thanos Petr"
         stickerCount = stickers[0]["sticker11"] as! Int
     }
@@ -105,7 +105,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onEaster(_ sender: Any)
     {
         imageName = "EastrPetr"
-        releaseDate = "September 2018"
+        releaseDate = "April 2019"
         stickerName = "Eastr Petr"
         stickerCount = stickers[0]["sticker10"] as! Int
     }
@@ -113,7 +113,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onSummer(_ sender: Any)
     {
         imageName = "BeachBumPetr"
-        releaseDate = "September 2018"
+        releaseDate = "April 2019"
         stickerName = "Beach Bum Petr"
         stickerCount = stickers[0]["sticker9"] as! Int
     }
@@ -121,7 +121,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onBBall(_ sender: Any)
     {
         imageName = "MarchMadnessPetr"
-        releaseDate = "September 2018"
+        releaseDate = "March 2019"
         stickerName = "March Madness Petr"
         stickerCount = stickers[0]["sticker8"] as! Int
     }
@@ -129,7 +129,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onLeprechaun(_ sender: Any)
     {
         imageName = "LuckyPetr"
-        releaseDate = "September 2018"
+        releaseDate = "March 2019"
         stickerName = "Lucky Petr"
         stickerCount = stickers[0]["sticker7"] as! Int
     }
@@ -137,7 +137,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onCupid(_ sender: Any)
     {
         imageName = "RomanticPetr"
-        releaseDate = "September 2018"
+        releaseDate = "February 2019"
         stickerName = "Romantic Petr"
         stickerCount = stickers[0]["sticker6"] as! Int
     }
@@ -145,7 +145,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onNewYear(_ sender: Any)
     {
         imageName = "2019Petr"
-        releaseDate = "September 2018"
+        releaseDate = "January 2019"
         stickerName = "New Year, New Petr"
         stickerCount = stickers[0]["sticker5"] as! Int
     }
@@ -153,7 +153,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onSanta(_ sender: Any)
     {
         imageName = "JollyPetr"
-        releaseDate = "September 2018"
+        releaseDate = "December 2018"
         stickerName = "Jolly Petr"
         stickerCount = stickers[0]["sticker4"] as! Int
     }
@@ -169,7 +169,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onSpooky(_ sender: Any)
     {
         imageName = "SpookyPetr"
-        releaseDate = "September 2018"
+        releaseDate = "October 2018"
         stickerName = "Spooky Petr"
         stickerCount = stickers[0]["sticker2"] as! Int
     }
@@ -177,7 +177,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onThanks(_ sender: Any)
     {
         imageName = "TurkeyPetr"
-        releaseDate = "September 2018"
+        releaseDate = "November 2018"
         stickerName = "Turkey Petr"
         stickerCount = stickers[0]["sticker3"] as! Int
     }
