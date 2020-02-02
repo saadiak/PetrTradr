@@ -20,6 +20,7 @@ class BigPetrViewController: UIViewController {
     
     @IBAction func onMinusButton(_ sender: Any)
     {
+        print("hello")
         
     }
     
