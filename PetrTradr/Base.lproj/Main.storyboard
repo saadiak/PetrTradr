@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -232,8 +232,7 @@
                     <navigationItem key="navigationItem" title="Trade" id="IBa-tZ-QQK">
                         <barButtonItem key="rightBarButtonItem" title="Create a Request" id="E6W-uq-Ime">
                             <connections>
-                                <action selector="onCreateRequest:" destination="u7N-mr-4F3" id="JRI-x1-Rf5"/>
-                                <segue destination="VCS-vw-aAa" kind="presentation" identifier="makeRequestSegue" id="fVr-Pi-NFG"/>
+                                <segue destination="VCS-vw-aAa" kind="presentation" identifier="makeRequestSegue" id="rEN-Dp-DlH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -312,6 +311,7 @@
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="sJl-T3-Xap"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M4L-Ed-X0w"/>
                     <connections>
                         <outlet property="giveStickersPicker" destination="HVy-0C-Y5f" id="DVI-qG-U8N"/>
                         <outlet property="wantStickersPicker" destination="kIH-6c-Dz0" id="eUX-xX-UQa"/>
@@ -319,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6aI-7j-QuX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6705.7971014492759" y="1151.7857142857142"/>
+            <point key="canvasLocation" x="7067" y="1136"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gHH-an-NHb">
