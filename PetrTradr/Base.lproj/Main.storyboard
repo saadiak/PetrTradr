@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Log In View Controller-->
+        <!--LogInScreen-->
         <scene sceneID="PCL-sc-gcc">
             <objects>
-                <viewController id="5QI-ET-OLm" customClass="LogInViewController" customModule="PetrTradr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInScreen" title="LogInScreen" id="5QI-ET-OLm" customClass="LogInViewController" customModule="PetrTradr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gld-AS-sig" customClass="UICollectionView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -321,26 +321,32 @@
             </objects>
             <point key="canvasLocation" x="7067" y="1136"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="gHH-an-NHb">
             <objects>
-                <viewController id="qO1-X5-ryj" sceneMemberID="viewController">
+                <viewController id="qO1-X5-ryj" customClass="ProfileViewController" customModule="PetrTradr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wdf-2E-8iQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.8980392157" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="VEH-D7-g5P"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Profile" id="LpV-3J-ChY"/>
+                    <navigationItem key="navigationItem" title="Profile" id="L4d-F8-Dqs">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fsN-z5-fdF">
+                            <connections>
+                                <action selector="onLogout:" destination="qO1-X5-ryj" id="eWQ-Xc-NDr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oK-Sf-QX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5002.898550724638" y="484.82142857142856"/>
+            <point key="canvasLocation" x="5913.04347826087" y="484.82142857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vTq-Is-YnG">
             <objects>
-                <tabBarController id="6BW-Fh-SsE" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="ProfileTabController" id="6BW-Fh-SsE" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="EHq-Bs-ERv"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u7y-KU-hrl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -348,7 +354,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="qO1-X5-ryj" kind="relationship" relationship="viewControllers" id="YFa-ZS-0aP"/>
+                        <segue destination="sSL-ow-Kwx" kind="relationship" relationship="viewControllers" id="YFa-ZS-0aP"/>
                         <segue destination="CnY-iI-x2x" kind="relationship" relationship="viewControllers" id="iKM-n8-Nb2"/>
                         <segue destination="4zv-TC-shJ" kind="relationship" relationship="viewControllers" id="VzM-FG-VAC"/>
                     </connections>
@@ -606,6 +612,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9o5-WB-xof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4837.68115942029" y="1147.7678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ih7-u3-rEj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sSL-ow-Kwx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Profile" id="LpV-3J-ChY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wRW-tJ-MTL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qO1-X5-ryj" kind="relationship" relationship="rootViewController" id="lSB-UJ-b5j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8M-0l-aL0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5002.898550724638" y="484.82142857142856"/>
         </scene>
     </scenes>
     <resources>
