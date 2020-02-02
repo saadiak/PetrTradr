@@ -13,6 +13,9 @@
 		4DAA1A8023E68D8200181C2F /* BigPetrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA1A7F23E68D8200181C2F /* BigPetrViewController.swift */; };
 		4DEF699A23E60B930070D413 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF699923E60B930070D413 /* TradeViewController.swift */; };
 		4DEF699C23E612A10070D413 /* TradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF699B23E612A10070D413 /* TradeTableViewCell.swift */; };
+		A75192CE23E6E86000F60FD8 /* WeJustWantRoundedButtonsOkay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75192CD23E6E86000F60FD8 /* WeJustWantRoundedButtonsOkay.swift */; };
+		A78A9D6223E6DB3F008D6BAF /* SKETCHY.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A78A9D6123E6DB3F008D6BAF /* SKETCHY.ttf */; };
+		A78A9D6423E6DC7B008D6BAF /* simplicity.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A78A9D6323E6DC7B008D6BAF /* simplicity.ttf */; };
 		A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D89E23E568D200FF1270 /* AppDelegate.swift */; };
 		A7D1D8A123E568D200FF1270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */; };
 		A7D1D8A623E568D200FF1270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D1D8A423E568D200FF1270 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 		4DEF699923E60B930070D413 /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
 		4DEF699B23E612A10070D413 /* TradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeTableViewCell.swift; sourceTree = "<group>"; };
 		637499B5479D2E7D809F4D06 /* Pods-PetrTradr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrTradr.debug.xcconfig"; path = "Target Support Files/Pods-PetrTradr/Pods-PetrTradr.debug.xcconfig"; sourceTree = "<group>"; };
+		A75192CD23E6E86000F60FD8 /* WeJustWantRoundedButtonsOkay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeJustWantRoundedButtonsOkay.swift; sourceTree = "<group>"; };
+		A78A9D6123E6DB3F008D6BAF /* SKETCHY.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SKETCHY.ttf; sourceTree = "<group>"; };
+		A78A9D6323E6DC7B008D6BAF /* simplicity.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = simplicity.ttf; sourceTree = "<group>"; };
 		A7D1D89B23E568D200FF1270 /* PetrTradr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrTradr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D1D89E23E568D200FF1270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +76,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A78A9D6023E6DB0F008D6BAF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A78A9D6323E6DC7B008D6BAF /* simplicity.ttf */,
+				A78A9D6123E6DB3F008D6BAF /* SKETCHY.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		A7D1D89223E568D200FF1270 = {
 			isa = PBXGroup;
 			children = (
@@ -91,10 +106,12 @@
 		A7D1D89D23E568D200FF1270 /* PetrTradr */ = {
 			isa = PBXGroup;
 			children = (
+				A78A9D6023E6DB0F008D6BAF /* Fonts */,
 				A7D1D89E23E568D200FF1270 /* AppDelegate.swift */,
 				A7D1D8A023E568D200FF1270 /* SceneDelegate.swift */,
 				A7F8538C23E5820400290156 /* HomePageViewController.swift */,
 				A7D1D8A423E568D200FF1270 /* Main.storyboard */,
+				A75192CD23E6E86000F60FD8 /* WeJustWantRoundedButtonsOkay.swift */,
 				A7D1D8AA23E568D400FF1270 /* Assets.xcassets */,
 				A7D1D8AC23E568D400FF1270 /* LaunchScreen.storyboard */,
 				A7D1D8AF23E568D400FF1270 /* Info.plist */,
@@ -183,6 +200,8 @@
 			files = (
 				A7D1D8AE23E568D400FF1270 /* LaunchScreen.storyboard in Resources */,
 				A7D1D8AB23E568D400FF1270 /* Assets.xcassets in Resources */,
+				A78A9D6223E6DB3F008D6BAF /* SKETCHY.ttf in Resources */,
+				A78A9D6423E6DC7B008D6BAF /* simplicity.ttf in Resources */,
 				A7D1D8A623E568D200FF1270 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +268,7 @@
 				A7D1D8A123E568D200FF1270 /* SceneDelegate.swift in Sources */,
 				4DAA1A7C23E64F1100181C2F /* TradeRequestViewController.swift in Sources */,
 				B17513C723E602D800B81532 /* ReminderTableViewController.swift in Sources */,
+				A75192CE23E6E86000F60FD8 /* WeJustWantRoundedButtonsOkay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
