@@ -7,10 +7,17 @@
 //
 
 import UIKit
+import Parse
 
-class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
+protocol VCWillDisappear {
+    func vcDisappear()
+}
+
+class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, VCWillDisappear
 {
     @IBOutlet weak var tradeTableView: UITableView!
+    
+    var requests = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,31 +26,66 @@ class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view.
     }
     
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        let query = PFQuery(className: "TradeRequests")
+        query.includeKeys(["user"])
+        
+        query.findObjectsInBackground { (request, error) in
+            if request != nil
+            {
+                self.requests = request!
+                self.tradeTableView.reloadData()
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return requests.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        /*let cell = UITableViewCell()
-        
-        cell.textLabel!.text = "row: \(indexPath.row)"
-        
-        return cell*/
         
         let cell = tradeTableView.dequeueReusableCell(withIdentifier: "TradeTableViewCell") as! TradeTableViewCell
+        
+        let current_request = requests[indexPath.row]
+        
+        cell.usernameLabel.text = current_request["username"] as! String
+        cell.willingToGiveLabel.text = current_request["my_stickers"] as! String
+        cell.lookingForLabel.text = current_request["want_stickers"] as! String
 
         return cell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    @IBAction func onCreateRequest(_ sender: Any)
+    {
+    }
+    
+    func vcDisappear() {
+        let query = PFQuery(className: "TradeRequests")
+        query.includeKeys(["user"])
+        
+        query.findObjectsInBackground { (request, error) in
+            if request != nil
+            {
+                self.requests = request!
+                self.tradeTableView.reloadData()
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "makeRequestSegue"
+        {
+            let destination = segue.destination as! TradeRequestViewController
+            destination.delegate=self
+            
+        }
     }
-    */
 
 }

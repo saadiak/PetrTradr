@@ -15,8 +15,8 @@ class TradeTableViewCell: UITableViewCell {
     @IBOutlet weak var usernameLabel: UILabel!
    
     
-    
-    @IBAction func onContact(_ sender: Any) {
+    @IBAction func onContact(_ sender: Any)
+    {
     }
     
     
