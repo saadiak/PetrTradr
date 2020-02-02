@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QI-ET-OLm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -192,6 +192,7 @@
                                                     <state key="normal" title="Contact"/>
                                                     <connections>
                                                         <action selector="onContact:" destination="A3O-VQ-Eu2" eventType="touchUpInside" id="TZa-F3-PfY"/>
+                                                        <segue destination="vlG-J3-YtP" kind="show" identifier="enterMessage" id="caN-1l-kkU"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peter Anteater" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6E-ky-egx">
@@ -243,6 +244,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ls9-K2-xs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5747.826086956522" y="1147.7678571428571"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="Ywv-WT-AzG">
+            <objects>
+                <viewController id="vlG-J3-YtP" customClass="ContactViewController" customModule="PetrTradr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lcK-0D-CiD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d76-dR-Hpa">
+                                <rect key="frame" x="174" y="163" width="119" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWj-n2-s2G">
+                                <rect key="frame" x="189" y="398" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="vlG-J3-YtP" eventType="touchUpInside" id="vtL-Qm-Qk3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ct-8C-MRL">
+                                <rect key="frame" x="78" y="255" width="200" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RY7-r4-WhY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3fA-qk-FaW"/>
+                    <connections>
+                        <outlet property="messageField" destination="7Ct-8C-MRL" id="lvU-YI-KxA"/>
+                        <outlet property="sendButton" destination="YWj-n2-s2G" id="oCi-eI-343"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8Z-0J-aFb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6431.884057971015" y="1154.4642857142856"/>
         </scene>
         <!--Trade Request View Controller-->
         <scene sceneID="Vll-0h-Wko">
@@ -389,7 +433,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKG-d3-n3C">
-                                                <rect key="frame" x="120" y="0.0" width="110" height="125"/>
+                                                <rect key="frame" x="120" y="0.0" width="110.00000000000023" height="125"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="110" id="bqA-Hw-Z7U"/>
                                                     <constraint firstAttribute="height" constant="125" id="oR5-bV-JHY"/>
@@ -483,7 +527,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-SA-uTK">
-                                                <rect key="frame" x="240" y="0.0" width="110" height="125"/>
+                                                <rect key="frame" x="240" y="0.0" width="110" height="125.00000000000011"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="125" id="aeh-Xl-SC6"/>
                                                     <constraint firstAttribute="width" constant="110" id="bau-ev-IIF"/>

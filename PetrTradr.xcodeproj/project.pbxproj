@@ -23,6 +23,7 @@
 		B17513C723E602D800B81532 /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17513C623E602D700B81532 /* ReminderTableViewController.swift */; };
 		B17513C923E602FD00B81532 /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17513C823E602FD00B81532 /* ReminderCell.swift */; };
 		B17513CB23E603BD00B81532 /* ReminderFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17513CA23E603BD00B81532 /* ReminderFormViewController.swift */; };
+		B17513CD23E6D9A200B81532 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17513CC23E6D9A200B81532 /* ContactViewController.swift */; };
 		FDC79688D26BD8AB19165403 /* Pods_PetrTradr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07359844E7D7BA218DEA28FA /* Pods_PetrTradr.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		B17513C623E602D700B81532 /* ReminderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
 		B17513C823E602FD00B81532 /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
 		B17513CA23E603BD00B81532 /* ReminderFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormViewController.swift; sourceTree = "<group>"; };
+		B17513CC23E6D9A200B81532 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		E56BF020727A0C77C83686BB /* Pods-PetrTradr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrTradr.release.xcconfig"; path = "Target Support Files/Pods-PetrTradr/Pods-PetrTradr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				4DAA1A7B23E64F1100181C2F /* TradeRequestViewController.swift */,
 				4DAA1A7D23E683AD00181C2F /* ProfileViewController.swift */,
 				4DAA1A7F23E68D8200181C2F /* BigPetrViewController.swift */,
+				B17513CC23E6D9A200B81532 /* ContactViewController.swift */,
 			);
 			path = PetrTradr;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DEF699A23E60B930070D413 /* TradeViewController.swift in Sources */,
+				B17513CD23E6D9A200B81532 /* ContactViewController.swift in Sources */,
 				B17513CB23E603BD00B81532 /* ReminderFormViewController.swift in Sources */,
 				A7D1D89F23E568D200FF1270 /* AppDelegate.swift in Sources */,
 				A7D1D8A923E568D200FF1270 /* PetrTradr.xcdatamodeld in Sources */,
