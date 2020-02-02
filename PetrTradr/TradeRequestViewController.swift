@@ -11,7 +11,7 @@ import Parse
 
 class TradeRequestViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    var delegate:VCWillDisappear?
+    var vc:TradeViewController?
     
     let stickers = ["Original Petr", "Spooky Petr", "Thankful Petr", "Jolly Petr",
     "New Year, New Petr", "Romantic Petr", "Lucky Petr", "March Madness Petr", "Beach Bum Petr", "Eastr Petr", "Thanos Petr", "Don't Talk to Me or My Petrs Ever Again", "Grad Petr"]
@@ -39,15 +39,14 @@ class TradeRequestViewController: UIViewController, UIPickerViewDelegate, UIPick
             }
             
         }
-        self.dismiss(animated: true)
-        self.delegate?.vcDisappear()
+        vc!.loadRequests()
+        self.dismiss(animated: true, completion: nil)
     }
     
     
     @IBAction func onCancelRequest(_ sender: Any)
     {
-        self.dismiss(animated: true)
-        self.delegate?.vcDisappear()
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

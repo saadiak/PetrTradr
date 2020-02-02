@@ -9,11 +9,7 @@
 import UIKit
 import Parse
 
-protocol VCWillDisappear {
-    func vcDisappear()
-}
-
-class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, VCWillDisappear
+class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     @IBOutlet weak var tradeTableView: UITableView!
     
@@ -24,12 +20,11 @@ class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tradeTableView.delegate = self
         tradeTableView.dataSource = self
         // Do any additional setup after loading the view.
+        loadRequests()
     }
     
-    
-    override func viewDidAppear(_ animated: Bool)
+    func loadRequests()
     {
-        super.viewDidAppear(animated)
         let query = PFQuery(className: "TradeRequests")
         query.includeKeys(["user"])
         
@@ -42,6 +37,12 @@ class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
+    override func viewDidAppear(_ animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        loadRequests()
+    }
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return requests.count
     }
@@ -59,22 +60,7 @@ class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
-    @IBAction func onCreateRequest(_ sender: Any)
-    {
-    }
     
-    func vcDisappear() {
-        let query = PFQuery(className: "TradeRequests")
-        query.includeKeys(["user"])
-        
-        query.findObjectsInBackground { (request, error) in
-            if request != nil
-            {
-                self.requests = request!
-                self.tradeTableView.reloadData()
-            }
-        }
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
@@ -83,9 +69,10 @@ class TradeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if segue.identifier == "makeRequestSegue"
         {
             let destination = segue.destination as! TradeRequestViewController
-            destination.delegate=self
-            
+            destination.vc = self
         }
+        
+
     }
 
 }
